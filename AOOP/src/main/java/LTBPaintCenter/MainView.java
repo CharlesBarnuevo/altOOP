@@ -30,19 +30,17 @@ public class MainView extends javax.swing.JFrame
         MainButtonGroup = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        posButton = new javax.swing.JToggleButton();
-        inventoryButton = new javax.swing.JToggleButton();
-        monitoringButton = new javax.swing.JToggleButton();
+        posToggleButton = new javax.swing.JToggleButton();
+        inventoryToggleButton = new javax.swing.JToggleButton();
+        monitoringToggleButton = new javax.swing.JToggleButton();
         jPanel3 = new javax.swing.JPanel();
         mainPanelLoad = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LTB Paint Center");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(1600, 900));
         setMinimumSize(new java.awt.Dimension(1600, 900));
         setName("mainFrame"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1600, 900));
         setResizable(false);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -58,27 +56,27 @@ public class MainView extends javax.swing.JFrame
             .addGap(0, 96, Short.MAX_VALUE)
         );
 
-        MainButtonGroup.add(posButton);
-        posButton.setText("POS");
-        posButton.addActionListener(new java.awt.event.ActionListener() {
+        MainButtonGroup.add(posToggleButton);
+        posToggleButton.setText("POS");
+        posToggleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                posButtonActionPerformed(evt);
+                posToggleButtonActionPerformed(evt);
             }
         });
 
-        MainButtonGroup.add(inventoryButton);
-        inventoryButton.setText("Inventory");
-        inventoryButton.addActionListener(new java.awt.event.ActionListener() {
+        MainButtonGroup.add(inventoryToggleButton);
+        inventoryToggleButton.setText("Inventory");
+        inventoryToggleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inventoryButtonActionPerformed(evt);
+                inventoryToggleButtonActionPerformed(evt);
             }
         });
 
-        MainButtonGroup.add(monitoringButton);
-        monitoringButton.setText("Monitoring");
-        monitoringButton.addActionListener(new java.awt.event.ActionListener() {
+        MainButtonGroup.add(monitoringToggleButton);
+        monitoringToggleButton.setText("Monitoring");
+        monitoringToggleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                monitoringButtonActionPerformed(evt);
+                monitoringToggleButtonActionPerformed(evt);
             }
         });
 
@@ -89,19 +87,19 @@ public class MainView extends javax.swing.JFrame
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 34, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(monitoringButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                    .addComponent(inventoryButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(posButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(monitoringToggleButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
+                    .addComponent(inventoryToggleButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(posToggleButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(64, 64, 64)
-                .addComponent(posButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(posToggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(inventoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(inventoryToggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(monitoringButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(monitoringToggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(80, Short.MAX_VALUE))
         );
 
@@ -165,29 +163,29 @@ public class MainView extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void posButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_posButtonActionPerformed
+    private void posToggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_posToggleButtonActionPerformed
         POSPanelView pos = new POSPanelView();
         jpload.jPanelLoader(mainPanelLoad, pos);
-    }//GEN-LAST:event_posButtonActionPerformed
+    }//GEN-LAST:event_posToggleButtonActionPerformed
 
-    private void inventoryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventoryButtonActionPerformed
+    private void inventoryToggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventoryToggleButtonActionPerformed
         InventoryPanelView inv = new InventoryPanelView();
         jpload.jPanelLoader(mainPanelLoad, inv);
-    }//GEN-LAST:event_inventoryButtonActionPerformed
+    }//GEN-LAST:event_inventoryToggleButtonActionPerformed
 
-    private void monitoringButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monitoringButtonActionPerformed
+    private void monitoringToggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monitoringToggleButtonActionPerformed
         MonitoringPanelView mon = new MonitoringPanelView();
         jpload.jPanelLoader(mainPanelLoad, mon);
-    }//GEN-LAST:event_monitoringButtonActionPerformed
+    }//GEN-LAST:event_monitoringToggleButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup MainButtonGroup;
-    private javax.swing.JToggleButton inventoryButton;
+    private javax.swing.JToggleButton inventoryToggleButton;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel mainPanelLoad;
-    private javax.swing.JToggleButton monitoringButton;
-    private javax.swing.JToggleButton posButton;
+    private javax.swing.JToggleButton monitoringToggleButton;
+    private javax.swing.JToggleButton posToggleButton;
     // End of variables declaration//GEN-END:variables
 }

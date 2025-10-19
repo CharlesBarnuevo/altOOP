@@ -112,15 +112,15 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
-                  <Component id="allPaintButton" min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="allPaintToggleButton" min="-2" pref="139" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="acrylicPaintButton" min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="acrylicPaintToggleButton" min="-2" pref="139" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="enamelPaintButton" min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="enamelPaintToggleButton" min="-2" pref="139" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="oilPaintButton" min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="oilPaintToggleButton" min="-2" pref="139" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="latexPaintButton" min="-2" pref="139" max="-2" attributes="0"/>
+                  <Component id="latexPaintToggleButton" min="-2" pref="139" max="-2" attributes="0"/>
                   <EmptySpace pref="140" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -130,18 +130,18 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="allPaintButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
-                      <Component id="acrylicPaintButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
-                      <Component id="enamelPaintButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
-                      <Component id="oilPaintButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
-                      <Component id="latexPaintButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      <Component id="allPaintToggleButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      <Component id="acrylicPaintToggleButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      <Component id="enamelPaintToggleButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      <Component id="oilPaintToggleButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
+                      <Component id="latexPaintToggleButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JToggleButton" name="allPaintButton">
+        <Component class="javax.swing.JToggleButton" name="allPaintToggleButton">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="PaintButtonsGroup"/>
@@ -149,10 +149,10 @@
             <Property name="text" type="java.lang.String" value="ALL"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allPaintButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allPaintToggleButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="acrylicPaintButton">
+        <Component class="javax.swing.JToggleButton" name="acrylicPaintToggleButton">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="PaintButtonsGroup"/>
@@ -160,10 +160,10 @@
             <Property name="text" type="java.lang.String" value="Acrylic Paint"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acrylicPaintButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acrylicPaintToggleButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="enamelPaintButton">
+        <Component class="javax.swing.JToggleButton" name="enamelPaintToggleButton">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="PaintButtonsGroup"/>
@@ -171,10 +171,10 @@
             <Property name="text" type="java.lang.String" value="Enamel Paint"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="enamelPaintButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="enamelPaintToggleButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="oilPaintButton">
+        <Component class="javax.swing.JToggleButton" name="oilPaintToggleButton">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="PaintButtonsGroup"/>
@@ -182,10 +182,10 @@
             <Property name="text" type="java.lang.String" value="Oil Paint"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oilPaintButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oilPaintToggleButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="latexPaintButton">
+        <Component class="javax.swing.JToggleButton" name="latexPaintToggleButton">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="PaintButtonsGroup"/>
@@ -193,7 +193,7 @@
             <Property name="text" type="java.lang.String" value="Latex"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="latexPaintButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="latexPaintToggleButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
